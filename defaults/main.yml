@@ -40,6 +40,7 @@ pip_install_setuptools: true
 pip_install_docker_py: true
 pip_install_docker_compose: true
 install_docker_py_on_1604: false
+pip_install_extra_args: -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 # Versions for the python packages that are installed
 pip_version_pip: latest

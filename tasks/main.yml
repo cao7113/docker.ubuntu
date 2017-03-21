@@ -171,6 +171,7 @@
     name: "{{ item.name }}"
     state: "{{ 'latest' if item.version=='latest' else 'present' }}"
     version: "{{ item.version if item.version!='latest' else omit }}"
+    extra_args: "{{ pip_install_extra_args }}" 
   with_items:
     - name: pip
       version: "{{ pip_version_pip }}"
